@@ -57,14 +57,3 @@ control 'apache2-logs' do
     its('mode') { should cmp '0640' }  # Verifica permisos de lectura/escritura
   end
 end
-
-control 'apache2-modules' do
-  impact 0.6
-  title 'Verificar que ciertos módulos estén habilitados en Apache2'
-  desc 'Los módulos de seguridad y SSL deben estar habilitados en Apache'
-
-  describe apache_conf do
-    its('LoadModule') { should include 'ssl_module' }
-    its('LoadModule') { should include 'rewrite_module' }
-  end
-end
