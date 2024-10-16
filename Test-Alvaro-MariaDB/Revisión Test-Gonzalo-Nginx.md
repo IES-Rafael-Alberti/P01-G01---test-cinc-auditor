@@ -88,12 +88,12 @@ En este último control comprobaremos si el fichero de configuración del servic
 ls -l /etc/nginx/nginx.conf
 
 stat -c "%a %U %G" /etc/nginx/nginx.conf
-```
 
-Si nos da de resultado otro usuario que no sea root, usamos el siguiente comando para cambiar los permisos:
+
+# Si nos da de resultado otro usuario que no sea root, usamos el siguiente comando para cambiar los permisos:
 sudo chown root:root /etc/nginx/nginx.conf
-
+```
 <br>
 
 ## CONCLUSIÓN
-A lo largo de este informe, hemos detallado los pasos necesarios para asegurar que el servicio Nginx está correctamente configurado y funcionando. Hemos verificado que el servicio esté instalado, activo y habilitado para arrancar automáticamente, que esté escuchando por el puerto adecuado, que la versión del servicio sea la más reciente y, por último, garantizado que los permisos del archivo de configuración sean los correctos.
+A lo largo de este informe, hemos detallado los pasos necesarios para asegurar que el servicio Nginx está correctamente configurado y funcionando. Hemos verificado que el servicio esté instalado, activo y habilitado para arrancar automáticamente, que esté escuchando por el puerto adecuado, que la versión del servicio sea la más reciente y, por último, garantizando que los permisos del archivo de configuración sean los correctos.
