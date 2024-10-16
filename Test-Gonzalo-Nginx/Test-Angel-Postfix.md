@@ -141,5 +141,7 @@ sudo apt install --only-upgrade postfix
 ```
 En sistemas basados en RedHat/CentOS:
 
-bash
+```bash
 sudo yum update postfix
+```
+
