@@ -8,13 +8,13 @@
   - [Comandos](#comandos)
   
 - [2. Verificación puerto correcto](#2-verificación-puerto-correcto)
-  - [Comandos](#comandos1)
+  - [Comandos](#comandos-1)
   
 - [3. Verificación versión](#3-verificación-versión)
-  - [Comandos](#comandos2)
+  - [Comandos](#comandos-2)
   
 - [4. Verificación permisos archivo de configuración](#4-verificación-permisos-archivo-de-configuración)
-  - [Comandos](#comandos3)
+  - [Comandos](#comandos-3)
 
 - [Conclusión](#conclusión)
 
