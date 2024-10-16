@@ -1,0 +1,10 @@
+name: nginx
+title: InSpec Profile
+maintainer: Gonzalo Pulido Sánchez
+copyright: Gonzalo Pulido Sánchez
+copyright_email: gpulsan0702@g.educaand.es
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: os
