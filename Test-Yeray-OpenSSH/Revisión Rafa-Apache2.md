@@ -1,4 +1,4 @@
-# Informe Técnico: Configuración y Verificación de Apache2 para pasar la auditorías de nuestro compañero
+# Configuración y Verificación de Apache2 para pasar la auditorías de nuestro compañero
 
 <br><br>
 
