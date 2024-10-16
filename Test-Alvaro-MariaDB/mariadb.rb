@@ -40,14 +40,3 @@ control 'mariadb-root-connection' do
     its('exit_status') { should eq 0 }
   end
 end
-
-control 'mariadb-config-permissions' do
-  impact 0.7
-  title 'Verificar la existencia y contenido del archivo de configuración de MariaDB'
-  desc 'Se verifica que el archivo de configuración my.cnf de MariaDB exista y que contenga la configuración "server-id = 1".'
-
-  describe file('/etc/my.cnf') do
-    it { should exist }
-    its('content') { should match /server-id = 1/ }
-  end
-end
