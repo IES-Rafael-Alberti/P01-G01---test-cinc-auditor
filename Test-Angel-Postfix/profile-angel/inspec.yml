@@ -1,0 +1,10 @@
+name: Angel
+title: InSpec Profile
+maintainer: Angel
+copyright: Angel
+copyright_email: amarsan702@g.educaand.es
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: os
