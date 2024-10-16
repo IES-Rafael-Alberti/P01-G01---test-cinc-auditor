@@ -1,3 +1,2 @@
-# Example InSpec Profile
+# Perfil sobre apache2 en InSpec
 
-This example shows the implementation of an InSpec profile.
