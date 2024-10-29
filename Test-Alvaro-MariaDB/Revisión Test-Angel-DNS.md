@@ -18,11 +18,11 @@
 
 - [5. Validación de registros DNS de la escuela de ciberseguridad](#5-validación-de-registros-dns-de-la-escuela-de-ciberseguridad)
   - [Comandos](#comandos-4)
-  - [5.1. Verificar configuración DNS en el servidor](#5.1-verificar-configuración-dns-en-el-servidor)
-  - [5.2. Reiniciar el servidor DNS](#5.2-reiniciar-el-servidor-dns)
-  - [5.3. Confirmar conectividad del servidor de correo](#5.3confirmar-conectividad-del-servidor-de-correo)
-  - [5.4. Diagnosticar registros A](#5.4-diagnosticar-registros-a)
-  - [5.5. Revisar registros de errores](#revisar-registros-de-errores)
+  - [5.1. Verificar configuración DNS en el servidor](#51-verificar-configuración-dns-en-el-servidor)
+  - [5.2. Reiniciar el servidor DNS](#52-reiniciar-el-servidor-dns)
+  - [5.3. Confirmar conectividad del servidor de correo](#53-confirmar-conectividad-del-servidor-de-correo)
+  - [5.4. Diagnosticar registros A](#54-diagnosticar-registros-a)
+  - [5.5. Revisar registros de errores](#55-revisar-registros-de-errores)
 
 - [Conclusión](#conclusión)
 
@@ -127,6 +127,7 @@ En este control, verificaremos que los registros DNS específicos (A y MX) del d
 *   **Comprobar** la existencia del registro MX para el dominio.
     
 ### COMANDOS:
+
 ```bash
 # Verificar el registro A para el dominio de la escuela
 dig @localhost -t A escuela-ciberseguridad.com
