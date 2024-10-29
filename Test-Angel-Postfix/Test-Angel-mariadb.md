@@ -94,7 +94,60 @@ Ahora, cambia a la base de datos ciberschool\_db:
 ```
 USE ciberschool_db;
 ```
+#### Tabla students
 
+Esta tabla registrará la información de los estudiantes en la academia. Crea la tabla students con los campos básicos:
+
+```
+CREATE TABLE students (
+  student_id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  enrollment_date DATE  );
+```
+
+#### Tabla courses
+
+Esta tabla se usará para registrar los cursos que ofrece la academia:
+
+```
+CREATE TABLE courses (
+  course_id INT AUTO_INCREMENT PRIMARY KEY,
+  course_name VARCHAR(100) NOT NULL,
+  description TEXT,
+  duration_weeks INT  );
+```
+
+#### Tabla labs
+
+Esta tabla registrará la información de los laboratorios de práctica de ciberseguridad:
+```
+CREATE TABLE labs (
+  lab_id INT AUTO_INCREMENT PRIMARY KEY,
+  lab_name VARCHAR(100) NOT NULL,
+  course_id INT,
+  description TEXT,
+  FOREIGN KEY (course_id) REFERENCES courses(course_id) ON DELETE SET NULL  );
+```
+
+## Paso 10. Verificar la configuración
+
+Sal del entorno de MariaDB ejecutando:
+
+```
+  EXIT;
+```
+
+Para verificar que todo esté correcto, puedes ejecutar algunos comandos desde la terminal:
+```
+# Verificar la base de datos
+
+  mysql -u root -e "SHOW DATABASES LIKE 'ciberschool_db'"  
+
+# Verificar las tablas dentro de ciberschool_db
+
+  mysql -u root -e "USE ciberschool_db; SHOW TABLES"
+```
 # Conclusión
 En nuestra guía, hemos abordado los pasos necesarios para asegurar que la instalación del servicio MariaDB esté correctamente configurada y funcionando de manera óptima. Verificamos que el servicio esté instalado y habilitado para iniciar automáticamente, que esté escuchando en el puerto adecuado y que esté utilizando la versión más reciente. Además, nos aseguramos de que los permisos del archivo de configuración sean los correctos. Estas medidas son fundamentales para mantener un entorno de base de datos seguro y eficiente, garantizando la integridad y disponibilidad de los datos.
 
